@@ -1,7 +1,11 @@
+using BulkyBooks.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDBContext>(options => );
+
 
 var app = builder.Build();
 
